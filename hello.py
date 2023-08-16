@@ -1,5 +1,11 @@
-def hello_world():
-   result = " Hello world\n" *10
-   print  (result)
+def factorial(n: int) -> int:
 
-hello_world()
+   if n != 0:
+
+       return factorial(n - 1) * n
+
+   else:
+
+       return 1
+
+print(len(str(factorial(100))))
